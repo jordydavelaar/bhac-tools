@@ -1,13 +1,9 @@
-wCC = gcc -I$(RAPTOR)/src -I$(PWD)
 CFLAGS = -openmp  -O2   -Wall -Wno-unused-but-set-variable 
 LDFLAGS = -openmp -lm -lfftw3 -I/opt/homebrew/Cellar/gsl/2.7.1/include -L/opt/homebrew/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas  
 
-VPATH=$(RAPTOR)/src:
-CPATH=$(RAPTOR)/src:
-
 OBJDIR=build
 
-TARGET=RAPTOR
+TARGET=BHAC-tools
 
 SOURCES=main.c model.c metric.c GRmath.c constants.c uniform.c
 OBJECTS := $(patsubst %.c,$(OBJDIR)/%.o,$(SOURCES))
