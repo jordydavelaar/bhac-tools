@@ -1,0 +1,10 @@
+nxlone1 = 1024
+nxlone2 = 128
+
+xprobminx1 = -4
+xprobminx2 = 0.0
+
+xprobmax1 = 4
+xprobmax2 = 1.0
+
+hslope = 0.
